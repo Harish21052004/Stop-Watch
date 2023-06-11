@@ -1,31 +1,76 @@
-.App {
-  text-align: center;
+.Container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(239, 100, 58, 0.955) 50%,rgba(240, 237, 237, 0.955) 50%) ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper
+{
+    width: 400px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(232, 88, 43, 0.955);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.wrapper h2{
+    color: orangered;
+}
+.Time
+{
+    font-size: 50px;
+    font-weight: 500;
+    padding: 10px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons
+{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: space-around;
 }
 
-.heart {
-  color: #ff0000;
+.buttons button
+{
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
 }
 
-.small {
-  font-size: 0.75rem;
+.buttons button:nth-child(1)
+{
+    background: rgba(21, 193, 9, 0.693);
+}
+.buttons button:nth-child(2)
+{
+    background: rgb(240, 58, 29);
+}
+.buttons button:nth-child(3)
+{
+    background: rgb(242, 245, 61);
+}
+
+@media screen and (max-width: 350px) {
+    .buttons{
+        flex-direction: column;
+        margin: 20px;        
+    }
+   
+    .wrapper{
+        height: 400px;
+    }
 }
